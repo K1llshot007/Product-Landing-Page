@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ecom | About Us</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="navbar nav_top">
+            <div class="logo">
+                <a href="#">
+                    <img src="kisspng-logo-phoenix-art-5afffc96c60439.6819225615267257828111.png" width="200">
+                </a>
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contacts.html">Contact Us</a>
+                <a href="#">Login/Register</a>
+            </div>
+        </nav>
+
+        <div class="feed">
+            <h2>Write a Review</h2>
+            <div class="feed_form">
+                <form name="submit-google" method="post">
+                    <input type="text" name=" " placeholder="Name"><br>
+                    <input type="email" name=" " placeholder="Email"><br>
+                    <input type="number" name=" " placeholder="Contact Number"><br>
+                    <textarea rows="5" cols="7" name=" " placeholder="Write your review"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="aboutus">
+            <h3>About us</h3>
+            <div class="about_content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae nesciunt animi earum, explicabo dignissimos eligendi culpa temporibus quae. Sapiente impedit rem eius odio praesentium cumque explicabo modi, nesciunt quisquam!</p>
+            </div>
+            <hr>
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, maxime. Ab, assumenda? Libero sunt quos est non reiciendis, minus iste quo natus, sint autem corrupti? Assumenda nobis accusamus quas molestiae.</p>
+        </div>
+        
+        
+        
+        
+        
+        <footer>
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="kisspng-logo-phoenix-art-5afffc96c60439.6819225615267257828111.png" width="200">
+                </a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="">About us</a>|
+                <a href="">Services</a>|
+                <a href="">Blogs</a>
+            </div>
+            <div class="docs">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>|
+            </div>
+            <div class="socials">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contacts">
+                <h3>Contact Us</h3>
+                <a href="tel: +919871371133">
+                    <i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="mailto: abhinav.sachdeva9@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="https://www.api.WhatsApp.com/send/phone=+919871371133" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2022 Phoenix Club. All Rights Reserved</p>
+        </footer>
+        
+        
+
+        
+        
+        
+        
+
+        <script type="text/javascript">
+            
+            const scriptURL ='https://script.google.com/macros/s/AKfycbzStyCBjRF2ErhaH7nFIxnc1H2Y9SJd6per_TibmbMbMcnUumY2HfhbCKPWjskXlfkD/exec'
+            
+            const form = document.forms ['submit-google']
+
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+               method: 'POST',
+               body: new FormData(form)
+           })
+           .then(response => alert(
+               "Thanks for your valuable feedback!!!"))
+           .catch(error => console.error('Error!', error.message))
+            })
+
+
+
+
+        </script>
+    </body>
+</html>
